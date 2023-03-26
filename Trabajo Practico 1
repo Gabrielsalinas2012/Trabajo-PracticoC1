@@ -1,0 +1,108 @@
+1)
+ a) package PrimerPaquete;
+
+     public class PrimerClase {
+
+	public static void main(String[] args) {
+
+                int numeroInicio=5, numeroFin=14;
+            while (numeroInicio<=numeroFin) {
+			System.out.print(numeroInicio+",");
+			numeroInicio++;
+		}
+         }
+      }
+
+ b) package PaqueteTPC1;
+ 
+     public class ClaseTPC1 {
+
+	public static void main(String[] args) {
+		
+		
+		int numeroInicio=5, numeroFin=14;
+		
+		while (numeroInicio<=numeroFin) {
+			
+			numeroInicio++;
+			
+			if (numeroInicio %2==0) {
+				System.out.print(numeroInicio+",");
+			}
+		}
+      }
+   }
+
+ c)package PaqueteTPC1;
+
+public class ClaseTPC1 {
+
+	public static void main(String[] args) {
+		
+		
+		int numeroInicio=5, numeroFin=14;
+		
+		boolean pares = true;
+		
+    	if (pares == true) {
+	    	 System.out.println("Estos son numeros pares:");
+	    } else {
+	    	System.out.println("Estos son numeros impares:");
+	    }
+		
+		while (numeroInicio<=numeroFin){
+	          if(pares == true)  {
+	        	  if (numeroInicio %2 == 0){
+	        		  
+	        		  System.out.println(numeroInicio);      
+	        	  }numeroInicio ++; 
+	          }else {    	  
+	    			if (numeroInicio %2 != 0) {
+	    				
+	    				System.out.println(numeroInicio);
+	    					
+	    			}numeroInicio ++;
+	    		}   	 
+	    }
+	}
+   }
+
+ d) package PaqueteTPC1;
+
+     public class ClaseTPC1 {
+
+	public static void main(String[] args) {
+		
+		
+		int numeroInicio=5, numeroFin=14;
+		
+		for(numeroFin=14; numeroInicio<=numeroFin; numeroFin --) {
+			System.out.print(numeroFin+",");
+			
+		}
+	}
+    }
+2) package PaqueteTPC1;
+
+public class monotributo {
+
+	public static void main(String[] args) {
+		/*pueden cambiar estas variables para ir probando*/
+		float ingresos = 30000;
+		int vehiculo = 0;
+		int inmueble = 1;
+		/*********************************************/
+		if ((ingresos >= 619720) && (vehiculo >= 3) && (inmueble >= 3)) {
+			
+			System.out.println("La persona pertenece a la categoría i");
+			
+		} else if((ingresos >= 177063) && (ingresos <=619720) && (vehiculo <= 1) && (inmueble <= 2) ) {
+			
+			System.out.println("La persona pertenece a la categoría ii");
+		}else {
+			if ((ingresos < 177063) && (vehiculo == 0) && (inmueble<=1)) {
+				System.out.println("La persona pertenece a la categoria iii");
+			}
+		}
+	} 
+}
